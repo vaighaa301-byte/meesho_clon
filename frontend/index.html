@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAVENDER — Luxury Indian Beauty Sanctuary | Skincare, Haircare & Makeup</title>
+  <meta name="description" content="Discover 100% authentic luxury and clinical Indian beauty at Lavender. Curated skincare, restorative haircare, high-pigment makeup, artisanal fragrance & body rituals.">
+  
+  <!-- Premium Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='10' fill='%238B6FAE'/><path d='M16 6c-3 4-7 8-7 12a7 7 0 0 0 14 0c0-4-4-8-7-12z' fill='%23FFFFFF'/><circle cx='16' cy='18' r='3' fill='%23C9A96E'/></svg>">
+</head>
+<body>
+
+  <!-- ====================================================================
+       NETFLIX-STYLE CINEMATIC OPENING INTRO OVERLAY
+       ==================================================================== -->
+  <div id="netflixIntroOverlay" class="netflix-intro-overlay" role="dialog" aria-label="Lavender Cinema Intro" onclick="if(window.finishNetflixIntro)window.finishNetflixIntro(); if(window.navigateToHome)window.navigateToHome(event);" title="Click to enter Lavender Sanctuary">
+    <div class="netflix-ambient-glow"></div>
+    <div class="netflix-light-rays"></div>
+
+    <div class="netflix-intro-stage">
+      <!-- Animated Monogram Ribbon Petals -->
+      <div class="netflix-logo-bloom" onclick="if(window.finishNetflixIntro)window.finishNetflixIntro(); if(window.navigateToHome)window.navigateToHome(event);" style="cursor: pointer;" title="Click to enter Lavender Sanctuary">
+        <div class="netflix-ribbon-beam"></div>
+        <svg class="netflix-monogram-svg" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="url(#goldGrad)" stroke-width="2" class="svg-ring-outer" />
+          <path d="M50 12 C36 28 22 45 22 64 A28 28 0 0 0 78 64 C78 45 64 28 50 12 Z" fill="url(#lavenderRibbon)" class="svg-petal-main" />
+          <path d="M50 30 V70 M38 58 L50 70 L62 58" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" class="svg-monogram-stroke" />
+          <circle cx="50" cy="70" r="6" fill="#C9A96E" class="svg-spark-dot" />
+          <defs>
+            <linearGradient id="lavenderRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#C9A96E" />
+              <stop offset="35%" stop-color="#8B6FAE" />
+              <stop offset="70%" stop-color="#67478D" />
+              <stop offset="100%" stop-color="#D8C4E8" />
+            </linearGradient>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#C9A96E" stop-opacity="0.2" />
+              <stop offset="50%" stop-color="#C9A96E" stop-opacity="1" />
+              <stop offset="100%" stop-color="#D8C4E8" stop-opacity="0.2" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Cinematic LAVENDER Expanding Letters (Netflix Style) -->
+      <div class="netflix-wordmark-wrap">
+        <div class="netflix-letter-sheen"></div>
+        <div class="netflix-letters-row" id="netflixLettersRow">
+          <span class="n-char" style="--i: 0">L</span>
+          <span class="n-char" style="--i: 1">A</span>
+          <span class="n-char" style="--i: 2">V</span>
+          <span class="n-char" style="--i: 3">E</span>
+          <span class="n-char" style="--i: 4">N</span>
+          <span class="n-char" style="--i: 5">D</span>
+          <span class="n-char" style="--i: 6">E</span>
+          <span class="n-char" style="--i: 7">R</span>
+        </div>
+      </div>
+
+      <!-- Tagline with Sparkle Reveal -->
+      <div class="netflix-subline">
+        <span class="netflix-sparkle">✦</span>
+        <span class="netflix-tagline-text">B E A U T Y &nbsp; S A N C T U A R Y</span>
+        <span class="netflix-sparkle">✦</span>
+      </div>
+
+      <div class="netflix-progress-line">
+        <div class="netflix-progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="netflix-intro-controls">
+      <button id="netflixSoundBtn" class="netflix-sound-toggle-btn" aria-label="Toggle Sound">
+        <span class="sound-icon-text">🔊 Sound On</span>
+      </button>
+      <button id="skipNetflixIntroBtn" class="netflix-skip-btn">
+        Skip Intro ✕
+      </button>
+    </div>
+  </div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <span class="announcement-sparkle">✦</span>
+        <span>THE LAVENDER FESTIVAL: Use code <span class="announcement-code">LAVENDER15</span> for Flat 15% OFF • 100% Verified Brand Authenticity Guarantee</span>
+      </div>
+      <div class="announcement-links">
+        <a href="javascript:void(0)" id="replayIntroBtn" class="announcement-link" style="color: var(--champagne-gold); font-weight: 700;">
+          ▶ Replay Intro
+        </a>
+        <span>•</span>
+        <a href="#/offers" class="announcement-link">Daily Offers</a>
+        <span>•</span>
+        <a href="#/brands" class="announcement-link">Brand Directory</a>
+        <span>•</span>
+        <a href="javascript:void(0)" id="topTrackOrderBtn" class="announcement-link">Track Order</a>
+        <span>•</span>
+        <span id="topAuthSlot" class="top-auth-slot"></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-main">
+      
+      <!-- Brand Identity -->
+      <a href="#/" class="brand-logo" id="homeLogoBtn" aria-label="Lavender Sanctuary Home" onclick="if(window.navigateToHome)window.navigateToHome(event); return false;">
+        <div class="brand-icon-wrap" id="brandDropIcon" title="Return to Home" onclick="if(window.navigateToHome)window.navigateToHome(event); return false;">
+          <svg viewBox="0 0 40 40" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+            <defs>
+              <linearGradient id="luxeGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE8B5" />
+                <stop offset="30%" stop-color="#E5C178" />
+                <stop offset="70%" stop-color="#C9A96E" />
+                <stop offset="100%" stop-color="#916E2E" />
+              </linearGradient>
+              <linearGradient id="luxePetalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFFFFF" />
+                <stop offset="40%" stop-color="#EFE6FA" />
+                <stop offset="80%" stop-color="#BA9ADF" />
+                <stop offset="100%" stop-color="#7B569E" />
+              </linearGradient>
+            </defs>
+            <!-- Delicate Filigree Ring -->
+            <circle cx="20" cy="20" r="18.5" stroke="url(#luxeGoldGrad)" stroke-width="0.9" stroke-dasharray="2 3" opacity="0.6"/>
+            <!-- Imperial Gem Facet -->
+            <path d="M20 4.5 L33.5 13.5 L30 28.5 L20 35.5 L10 28.5 L6.5 13.5 Z" fill="url(#luxeGoldGrad)" fill-opacity="0.08" stroke="url(#luxeGoldGrad)" stroke-width="1.2"/>
+            <!-- Monogram L Calligraphic Ribbon -->
+            <path d="M14 10.5 C14 8 16.5 7 18.5 8.5 C20 10 19.5 13 17 15.5 C14.5 18 13 22 13 26 C13 28.8 15.5 29.5 19 29 C23 28.5 25.5 26.5 26.5 24.5" stroke="url(#luxeGoldGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Central Lavender Bloom Petal -->
+            <path d="M20 7 C18 10.5 16.2 14 16.2 17.5 C16.2 20 18 21.5 20 21.5 C22 21.5 23.8 20 23.8 17.5 C23.8 14 22 10.5 20 7 Z" fill="url(#luxePetalGrad)"/>
+            <!-- Left Petal Wing -->
+            <path d="M16 13.5 C13 14.5 10.5 16.5 10.5 19 C10.5 21.2 12.5 22.2 15 21.5 C16.2 21 17 19.5 17 17.8 Z" fill="url(#luxePetalGrad)" fill-opacity="0.85"/>
+            <!-- Right Petal Wing -->
+            <path d="M24 13.5 C27 14.5 29.5 16.5 29.5 19 C29.5 21.2 27.5 22.2 25 21.5 C23.8 21 23 19.5 23 17.8 Z" fill="url(#luxePetalGrad)" fill-opacity="0.85"/>
+            <!-- Apex Floating Brilliant Diamond Star -->
+            <path d="M20 3 L20.7 5.3 L23 6 L20.7 6.7 L20 9 L19.3 6.7 L17 6 L19.3 5.3 Z" fill="url(#luxeGoldGrad)"/>
+            <circle cx="20" cy="6" r="0.8" fill="#FFFFFF"/>
+            <!-- Micro Pearl Accent -->
+            <circle cx="26.5" cy="24.5" r="1.4" fill="url(#luxeGoldGrad)"/>
+          </svg>
+        </div>
+        <div class="brand-name-group">
+          <span class="brand-wordmark"><span class="logo-gold-initial">L</span>AVENDER</span>
+          <span class="brand-tagline"><span class="tagline-star">✦</span> LUXURY BEAUTY SANCTUARY <span class="tagline-star">✦</span></span>
+        </div>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <div class="search-box" id="searchBoxWrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            id="globalSearchInput" 
+            class="search-input"
+            placeholder="Search serums, sunscreens SPF 50, lipsticks, shampoos, body lotion..." 
+            autocomplete="off"
+            aria-label="Search beauty products"
+          />
+          <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear search">✕</button>
+        </div>
+
+        <!-- Live Search Suggestions Dropdown -->
+        <div class="search-dropdown" id="searchDropdown">
+          <div class="search-dropdown-title">Trending Searches</div>
+          <div class="search-quick-tags" id="searchQuickTags">
+            <button class="search-quick-tag" data-tag="sunscreen">sunscreen</button>
+            <button class="search-quick-tag" data-tag="vitamin C serum">vitamin C serum</button>
+            <button class="search-quick-tag" data-tag="lipstick">lipstick</button>
+            <button class="search-quick-tag" data-tag="anti dandruff shampoo">anti dandruff shampoo</button>
+            <button class="search-quick-tag" data-tag="body lotion">body lotion</button>
+            <button class="search-quick-tag" data-tag="Minimalist">Minimalist</button>
+            <button class="search-quick-tag" data-tag="Maybelline">Maybelline</button>
+          </div>
+          <div class="search-dropdown-title">Matching Products</div>
+          <div class="search-preview-list" id="searchPreviewList">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Navigation (Wishlist, Bag, Account) -->
+      <div class="header-actions">
+        <a href="#/wishlist" class="action-btn" id="wishlistToggleBtn" aria-label="View Wishlist">
+          <div class="action-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="badge-count" id="wishlistCountBadge">0</span>
+          </div>
+          <span class="action-label" id="wishlistHeaderLabel">Wishlist</span>
+        </a>
+
+        <button class="action-btn" id="cartToggleBtn" aria-label="View Shopping Bag">
+          <div class="action-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="badge-count" id="cartCountBadge">0</span>
+          </div>
+          <span class="action-label">Bag</span>
+        </button>
+
+        <!-- Account / Profile Dropdown -->
+        <div class="user-account-wrapper">
+          <button class="action-btn" id="userAccountBtn" aria-label="Account">
+            <div class="action-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <span class="action-label" id="userAccountLabel">Account</span>
+          </button>
+          <div class="account-dropdown-menu" id="accountDropdownMenu">
+            <div class="account-menu-header" id="accountMenuHeader">
+              <div class="account-user-name" id="menuUserName">Guest</div>
+              <div class="account-user-email" id="menuUserEmail">Not signed in</div>
+              <span class="account-badge">✦ Verified Beauty Member</span>
+            </div>
+            <ul class="account-menu-links">
+              <li>
+                <a href="#/wishlist" class="account-menu-item">
+                  ♡ Saved Wishlist (<span id="menuWishlistCount">0</span>)
+                </a>
+              </li>
+              <li>
+                <a href="#/offers" class="account-menu-item">
+                  🏷 Member Offers (15% Off)
+                </a>
+              </li>
+              <li id="accountDropdownLogoutLi">
+                <button type="button" onclick="window.handleSignOut();" class="account-menu-item sign-out-link" id="accountMenuLogoutBtn" style="width: 100%; border: none; background: transparent; text-align: left; cursor: pointer; font-family: inherit;">
+                  🚪 Log Out ↪
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Top Shopping Navigation Strip -->
+    <!-- All Beauty | Skincare | Haircare | Makeup | Bodycare | Fragrance | Brands | Offers -->
+    <nav class="category-nav-strip" aria-label="Shopping Categories">
+      <div class="container">
+        <ul class="nav-links-list" id="mainCategoryNav">
+          <li class="nav-item">
+            <a href="#/all-beauty" class="nav-link" data-route="all-beauty" onclick="if(window.navigateToCategory)window.navigateToCategory('all-beauty'); return false;">All Beauty</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/skincare" class="nav-link" data-route="skincare" onclick="if(window.navigateToCategory)window.navigateToCategory('skincare'); return false;">Skincare</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/haircare" class="nav-link" data-route="haircare" onclick="if(window.navigateToCategory)window.navigateToCategory('haircare'); return false;">Haircare</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/makeup" class="nav-link" data-route="makeup" onclick="if(window.navigateToCategory)window.navigateToCategory('makeup'); return false;">Makeup</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/bodycare" class="nav-link" data-route="bodycare" onclick="if(window.navigateToCategory)window.navigateToCategory('bodycare'); return false;">Bodycare</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/fragrance" class="nav-link" data-route="fragrance" onclick="if(window.navigateToCategory)window.navigateToCategory('fragrance'); return false;">Fragrance</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/brands" class="nav-link" data-route="brands" onclick="if(window.navigateToCategory)window.navigateToCategory('brands'); return false;">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a href="#/offers" class="nav-link" data-route="offers" onclick="if(window.navigateToCategory)window.navigateToCategory('offers'); return false;">
+              Offers <span class="nav-tag-badge">50% Off</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Dynamic Views Container -->
+  <main id="mainAppContent">
+
+    <!-- ====================================================================
+         VIEW 1: HOMEPAGE (Original Premium Layout)
+         ==================================================================== -->
+    <div id="homeView" class="view-container active-view">
+      
+      <!-- 1. Elegant Lavender Hero Section -->
+      <section class="hero-section" aria-label="Welcome to Lavender">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-pill">
+              <span>✦</span>
+              <span>THE INDIAN BEAUTY SANCTUARY</span>
+            </div>
+            <h1 class="hero-title">
+              Pure botanical luxury, <em>clinically refined</em> for Indian skin.
+            </h1>
+            <p class="hero-desc">
+              Immerse yourself in authentic Indian dermatological formulations, radiant makeup artistry, and aromatherapeutic body care rituals curated for our diverse climate and undertones.
+            </p>
+            <div class="hero-ctas">
+              <a href="#/all-beauty" class="btn-primary">
+                Explore All Beauty
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#/offers" class="btn-outline">View Festival Offers</a>
+            </div>
+            <div class="hero-trust-row">
+              <div class="trust-item">
+                <div class="trust-icon">✓</div>
+                <div class="trust-text">100% Authentic Brands</div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-icon">✦</div>
+                <div class="trust-text">Derm Tested Actives</div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-icon">⚡</div>
+                <div class="trust-text">Free Express Shipping</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-main-card">
+              <img 
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80" 
+                alt="Lavender Luxury Beauty Collection" 
+                class="hero-main-img"
+              />
+              <div class="hero-floating-glass-card">
+                <div class="glass-badge-gold">✦</div>
+                <div>
+                  <div class="glass-text-top">CURATED SELECTION</div>
+                  <div class="glass-text-bottom">20+ Iconic Indian Beauty Houses</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Shop By Category -->
+      <section class="category-tiles-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Ritual Discovery</div>
+              <h2 class="section-title">Shop by Category</h2>
+            </div>
+            <a href="#/all-beauty" class="section-view-all">View All Categories →</a>
+          </div>
+          <div class="category-tiles-grid" id="homeCategoryTiles">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Trending Now -->
+      <section class="product-showcase-section bg-alt">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Viral Phenomenons</div>
+              <h2 class="section-title">Trending Now</h2>
+            </div>
+            <a href="#/all-beauty" class="section-view-all">Explore Trending →</a>
+          </div>
+          <div class="product-grid" id="homeTrendingGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Bestsellers -->
+      <section class="product-showcase-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Most Loved Formulations</div>
+              <h2 class="section-title">Lavender Bestsellers</h2>
+            </div>
+            <a href="#/all-beauty" class="section-view-all">Shop Bestsellers →</a>
+          </div>
+          <div class="product-grid" id="homeBestsellersGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Top Brands Showcase -->
+      <section class="brands-showcase-section bg-alt">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Flagship Boutiques</div>
+              <h2 class="section-title">Top Beauty Brands</h2>
+            </div>
+            <a href="#/brands" class="section-view-all">All 20+ Brands →</a>
+          </div>
+          <div class="brands-pill-grid" id="homeBrandsGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Skincare Essentials -->
+      <section class="product-showcase-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Clinical Radiance</div>
+              <h2 class="section-title">Skincare Essentials</h2>
+            </div>
+            <a href="#/skincare" class="section-view-all">Explore Skincare →</a>
+          </div>
+          <div class="product-grid" id="homeSkincareGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Haircare Edit -->
+      <section class="product-showcase-section bg-alt">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Crown Restoration</div>
+              <h2 class="section-title">The Haircare Edit</h2>
+            </div>
+            <a href="#/haircare" class="section-view-all">Explore Haircare →</a>
+          </div>
+          <div class="product-grid" id="homeHaircareGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Makeup Must-Haves -->
+      <section class="product-showcase-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Artistry & Color</div>
+              <h2 class="section-title">Makeup Must-Haves</h2>
+            </div>
+            <a href="#/makeup" class="section-view-all">Explore Makeup →</a>
+          </div>
+          <div class="product-grid" id="homeMakeupGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Bodycare Rituals -->
+      <section class="product-showcase-section bg-alt">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Indulgent Self-Care</div>
+              <h2 class="section-title">Bodycare Rituals</h2>
+            </div>
+            <a href="#/bodycare" class="section-view-all">Explore Bodycare →</a>
+          </div>
+          <div class="product-grid" id="homeBodycareGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Deals You’ll Love -->
+      <section class="product-showcase-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Limited Time Drops</div>
+              <h2 class="section-title">Deals You’ll Love</h2>
+            </div>
+            <a href="#/offers" class="section-view-all">See All Offers →</a>
+          </div>
+          <div class="product-grid" id="homeDealsGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Customer Reviews -->
+      <section class="reviews-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-subtitle">Verified Testimonials</div>
+              <h2 class="section-title">Loved by Indian Beauty Lovers</h2>
+            </div>
+          </div>
+          <div class="reviews-grid" id="homeReviewsGrid">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="container newsletter-inner">
+          <div class="newsletter-pill">✦ LAVENDER PRIVÉ CLUB</div>
+          <h2 class="newsletter-title">Unlock 15% Off Your First Ritual</h2>
+          <p class="newsletter-desc">
+            Subscribe for early VIP access to limited drops, dermatologist skincare masterclasses, and secret weekend flash promotions.
+          </p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); window.handleNewsletterSubmit();">
+            <input 
+              type="email" 
+              class="newsletter-input" 
+              id="newsletterEmail" 
+              placeholder="Enter your email address" 
+              required
+            />
+            <button type="submit" class="newsletter-submit-btn">Join Privé</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ====================================================================
+         VIEW 2: CATEGORY & ALL BEAUTY PRODUCT LISTING PAGE
+         ==================================================================== -->
+    <div id="listingView" class="view-container">
+      
+      <!-- Category Banner Header -->
+      <div class="listing-page-hero">
+        <div class="container">
+          <div class="breadcrumbs-row" id="listingBreadcrumbs">
+            <a href="#/" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span id="breadcrumbCurrent">Skincare</span>
+          </div>
+          <h1 class="listing-hero-title" id="listingPageTitle">Skincare Sanctuary</h1>
+          <p class="listing-hero-desc" id="listingPageDesc">
+            Explore dermatologist-developed active serums, barrier creams, and SPF shields.
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Layout: Filters Sidebar + 4-Column Product Grid -->
+      <div class="container listing-main-container">
+        <div class="listing-layout">
+          
+          <!-- Filters Sidebar -->
+          <aside class="filter-sidebar" id="filterSidebar">
+            <div class="filter-header">
+              <span class="filter-heading-text">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="4" y1="21" x2="4" y2="14"></line>
+                  <line x1="4" y1="10" x2="4" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="3"></line>
+                  <line x1="20" y1="21" x2="20" y2="16"></line>
+                  <line x1="20" y1="12" x2="20" y2="3"></line>
+                  <line x1="1" y1="14" x2="7" y2="14"></line>
+                  <line x1="9" y1="8" x2="15" y2="8"></line>
+                  <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+                Refine Selection
+              </span>
+              <button class="filter-reset-btn" id="filterResetBtn">Clear All</button>
+            </div>
+
+            <!-- Product Type Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Product Type</div>
+              <div class="filter-options-list" id="filterProductTypeList">
+                <!-- Dynamically populated based on active category -->
+              </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Brand</div>
+              <div class="filter-options-list" id="filterBrandList">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Price Range</div>
+              <div class="price-slider-wrap">
+                <input 
+                  type="range" 
+                  id="priceSlider" 
+                  class="price-slider-range" 
+                  min="100" 
+                  max="1200" 
+                  step="50" 
+                  value="1200" 
+                />
+                <div class="price-slider-labels">
+                  <span>₹100</span>
+                  <span id="priceSliderValue">Up to ₹1,200</span>
+                </div>
+              </div>
+              <div class="filter-chips-row" style="margin-top: 10px;">
+                <button class="filter-chip-btn" data-max-price="299">Under ₹299</button>
+                <button class="filter-chip-btn" data-max-price="499">Under ₹499</button>
+                <button class="filter-chip-btn" data-max-price="799">Under ₹799</button>
+              </div>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Customer Rating</div>
+              <div class="filter-options-list">
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="ratingFilter" value="4.5" />
+                  <span>4.5 ★ & above</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="ratingFilter" value="4.0" />
+                  <span>4.0 ★ & above</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="ratingFilter" value="0" checked />
+                  <span>All Ratings</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Skin Type / Hair Type Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Skin / Hair Suitability</div>
+              <div class="filter-options-list" id="filterSkinTypeList">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+
+            <!-- Concern Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Skin & Hair Concern</div>
+              <div class="filter-options-list" id="filterConcernList">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+
+            <!-- Discount Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Discount</div>
+              <div class="filter-options-list">
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="discountFilter" value="20" />
+                  <span>20% or more</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="discountFilter" value="10" />
+                  <span>10% or more</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="radio" name="discountFilter" value="0" checked />
+                  <span>All Items</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Availability Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Availability</div>
+              <label class="filter-checkbox-label">
+                <input type="checkbox" id="inStockOnlyCheckbox" checked />
+                <span>In Stock only</span>
+              </label>
+            </div>
+
+          </aside>
+
+          <!-- Listing Content (Head + Grid) -->
+          <div class="listing-content-col">
+            <div class="listing-results-head">
+              <div class="listing-count-text">
+                Showing <strong id="listingResultCount">0</strong> products
+              </div>
+              <div class="sort-select-wrap">
+                <label for="sortBySelect" class="sort-label">Sort by:</label>
+                <select id="sortBySelect" class="sort-select">
+                  <option value="popularity">Popularity</option>
+                  <option value="price-low-high">Price: Low to High</option>
+                  <option value="price-high-low">Price: High to Low</option>
+                  <option value="rating">Highest Rated</option>
+                  <option value="newest">Newest Arrivals</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="listingProductGrid">
+              <!-- Rendered dynamically -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-catalog-state" id="listingEmptyState" style="display: none;">
+              <div class="empty-state-icon">✦</div>
+              <h3 class="empty-state-title">No products match your exact filters</h3>
+              <p class="empty-state-desc">Try clearing selected filters or expanding the price range to explore more formulations.</p>
+              <button class="btn-primary" id="emptyResetBtn">Reset All Filters</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ====================================================================
+         VIEW 3: BRANDS DIRECTORY & BRAND BOUTIQUE PAGE
+         ==================================================================== -->
+    <div id="brandsView" class="view-container">
+      <div class="listing-page-hero">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="#/" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Brands</span>
+          </div>
+          <h1 class="listing-hero-title">Official Brand Directory</h1>
+          <p class="listing-hero-desc">
+            Explore 100% authentic authorized flagship brand boutiques. Every batch authenticated directly with manufacturer seals.
+          </p>
+
+          <!-- A-Z Alphabet Navigation -->
+          <div class="brands-alphabet-nav" id="brandsAlphaNav">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 40px 0 64px;">
+        <div class="brands-directory-grid" id="brandsDirectoryGrid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         VIEW 4: OFFERS PAGE
+         ==================================================================== -->
+    <div id="offersView" class="view-container">
+      <div class="listing-page-hero">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="#/" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Offers</span>
+          </div>
+          <h1 class="listing-hero-title">Lavender Beauty Carnival</h1>
+          <p class="listing-hero-desc">
+            Exclusive festive discounts, flash deals, and curated luxury vouchers up to 50% OFF.
+          </p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 40px 0 64px;">
+        <!-- Vouchers Row -->
+        <div class="offers-vouchers-grid">
+          <div class="offer-voucher-card">
+            <div class="voucher-left">
+              <span class="voucher-code">LAVENDER15</span>
+              <span class="voucher-desc">Flat 15% OFF on beauty orders above ₹499</span>
+            </div>
+            <button class="voucher-copy-btn" onclick="window.copyVoucherCode('LAVENDER15')">Copy Code</button>
+          </div>
+          <div class="offer-voucher-card">
+            <div class="voucher-left">
+              <span class="voucher-code">GLOW200</span>
+              <span class="voucher-desc">Flat ₹200 OFF on luxury orders above ₹999</span>
+            </div>
+            <button class="voucher-copy-btn" onclick="window.copyVoucherCode('GLOW200')">Copy Code</button>
+          </div>
+          <div class="offer-voucher-card">
+            <div class="voucher-left">
+              <span class="voucher-code">WELCOME50</span>
+              <span class="voucher-desc">Flat ₹50 OFF on your debut Lavender order</span>
+            </div>
+            <button class="voucher-copy-btn" onclick="window.copyVoucherCode('WELCOME50')">Copy Code</button>
+          </div>
+        </div>
+
+        <!-- Offers Tabs: Flash deals | Up to 50% OFF | Bestsellers | Combo offers | Buy 1 Get 1 | Under ₹299 | Under ₹499 -->
+        <div class="offers-tabs-row" id="offersTabsRow">
+          <button class="offers-tab-btn active" data-offer-filter="all">All Offers</button>
+          <button class="offers-tab-btn" data-offer-filter="flash">Flash Deals</button>
+          <button class="offers-tab-btn" data-offer-filter="50off">Up to 50% OFF</button>
+          <button class="offers-tab-btn" data-offer-filter="bestseller">Bestsellers</button>
+          <button class="offers-tab-btn" data-offer-filter="under299">Under ₹299</button>
+          <button class="offers-tab-btn" data-offer-filter="under499">Under ₹499</button>
+        </div>
+
+        <!-- Offers Product Grid -->
+        <div class="product-grid" id="offersProductGrid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         VIEW 5: SEARCH RESULTS PAGE
+         ==================================================================== -->
+    <div id="searchView" class="view-container">
+      <div class="listing-page-hero">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="#/" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Search</span>
+          </div>
+          <h1 class="listing-hero-title">
+            Search Results for "<span id="searchResultQueryText"></span>"
+          </h1>
+          <p class="listing-hero-desc" id="searchResultSubtitle">
+            Showing matching skincare, haircare, makeup, and fragrance products.
+          </p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 40px 0 64px;">
+        <div class="product-grid" id="searchResultGrid">
+          <!-- Rendered dynamically -->
+        </div>
+        <div class="empty-catalog-state" id="searchEmptyState" style="display: none;">
+          <div class="empty-state-icon">🔍</div>
+          <h3 class="empty-state-title">No matching formulations found</h3>
+          <p class="empty-state-desc">Try checking your spelling or search by brand name like "Minimalist", "Maybelline", or "Dot & Key".</p>
+          <a href="#/all-beauty" class="btn-primary" style="display: inline-flex;">Browse All Beauty</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         DEDICATED VIEW: CREATE ACCOUNT & AUTH PAGE (Wishlist Guard)
+         ==================================================================== -->
+    <div id="createAccountView" class="view-container" style="display: none;">
+      <div class="listing-page-hero" style="background: linear-gradient(135deg, #FAF7F5 0%, #F3ECF8 100%); padding: 36px 0 28px;">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="#/" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span id="createAccountBreadcrumb">Account</span>
+          </div>
+          <h1 class="listing-hero-title" id="pageAuthTitle">Create your Lavender account</h1>
+          <p class="listing-hero-desc" id="pageAuthDesc">
+            Save your favourite beauty products and access them anytime.
+          </p>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 40px 0 72px;">
+        <div class="create-account-page-layout">
+          
+          <!-- Left Column: Pending Wishlist Product Callout -->
+          <div class="create-account-product-col" id="pageAuthProductCol" style="display: none;">
+            <div class="page-auth-product-card">
+              <div class="page-auth-badge">✦ SAVING TO YOUR WISHLIST</div>
+              <div class="page-auth-product-row">
+                <img id="pageAuthProdImg" src="" alt="Product" class="page-auth-prod-img" />
+                <div class="page-auth-prod-meta">
+                  <div class="page-auth-brand" id="pageAuthProdBrand">Brand</div>
+                  <h3 class="page-auth-title" id="pageAuthProdTitle">Product Title</h3>
+                  <div class="page-auth-price" id="pageAuthProdPrice">₹0</div>
+                </div>
+              </div>
+              <div class="page-auth-note">
+                ✓ This item will be automatically saved to your Wishlist once your account is created!
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Registration / Sign In Form Card -->
+          <div class="create-account-form-col">
+            <div class="create-account-form-card">
+              <div class="page-auth-tabs">
+                <button type="button" class="page-auth-tab active" id="pageTabCreateBtn" onclick="window.switchPageAuthTab('create');">Create Account</button>
+                <button type="button" class="page-auth-tab" id="pageTabLoginBtn" onclick="window.switchPageAuthTab('login');">Login if you have an account</button>
+              </div>
+
+              <!-- Option 1: Continue with Google -->
+              <div style="margin-bottom: 20px;">
+                <button type="button" class="btn-google-auth" onclick="window.handleGoogleAuth();">
+                  <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink: 0;">
+                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.27 21.43 7.35 24 12 24z"/>
+                    <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.27 2.57 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                  </svg>
+                  <span>Continue with Google</span>
+                </button>
+              </div>
+
+              <div class="auth-divider" style="margin: 20px 0;">
+                <span>OR CONTINUE WITH EMAIL</span>
+              </div>
+
+              <!-- Form 1: Register Form -->
+              <form id="pageCreateAccountForm" onsubmit="event.preventDefault(); window.handlePageCreateAccount();">
+                <div class="form-group" style="margin-bottom: 16px;">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" id="pageRegFullName" class="form-input" required placeholder="Enter your full name" autocomplete="name" />
+                </div>
+                <div class="form-group" style="margin-bottom: 16px;">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" id="pageRegEmail" class="form-input" required placeholder="name@example.com" autocomplete="email" />
+                </div>
+                <div class="form-group" style="margin-bottom: 16px;">
+                  <label class="form-label">Password *</label>
+                  <input type="password" id="pageRegPassword" class="form-input" required placeholder="Create a secure password (min 4 chars)" autocomplete="new-password" />
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label class="form-label">Phone Number (Optional)</label>
+                  <input type="tel" id="pageRegPhone" class="form-input" placeholder="10-digit mobile number" autocomplete="tel" />
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit-btn" id="pageSubmitCreateBtn" style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
+                  Create Account & Save to Wishlist ♡
+                </button>
+
+                <div style="text-align: center; margin-top: 14px; font-size: 0.85rem; color: var(--deep-plum-muted);">
+                  Already have an account? <a href="javascript:void(0)" onclick="window.switchPageAuthTab('login');" style="color: var(--primary-lavender); font-weight: 700;">Login here</a>
+                </div>
+              </form>
+
+              <!-- Form 2: Sign In Form -->
+              <form id="pageSignInForm" style="display: none;" onsubmit="event.preventDefault(); window.handlePageSignIn();">
+                <div class="form-group" style="margin-bottom: 16px;">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" id="pageLoginEmail" class="form-input" required placeholder="name@example.com" autocomplete="email" />
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                  <label class="form-label">Password *</label>
+                  <input type="password" id="pageLoginPassword" class="form-input" required placeholder="Enter your password" autocomplete="current-password" />
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit-btn" id="pageSubmitLoginBtn" style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
+                  Login & Save to Wishlist ♡
+                </button>
+
+                <div style="text-align: center; margin-top: 14px; font-size: 0.85rem; color: var(--deep-plum-muted);">
+                  Don't have an account yet? <a href="javascript:void(0)" onclick="window.switchPageAuthTab('create');" style="color: var(--primary-lavender); font-weight: 700;">Create an account</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         DEDICATED VIEW: WISHLIST PAGE (#/wishlist)
+         ==================================================================== -->
+    <div id="wishlistPageView" class="view-container" style="display: none;">
+      <div class="listing-page-hero" style="background: linear-gradient(135deg, #FAF7F5 0%, #F5EFF9 100%); padding: 36px 0 28px;">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="#/" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Wishlist</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+            <div>
+              <h1 class="listing-hero-title">Your Saved Wishlist <span style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--primary-lavender); font-weight: 700;" id="wishlistPageCountHeader">(0 items)</span></h1>
+              <p class="listing-hero-desc">Your curated sanctuary of personal beauty rituals and favourite formulations.</p>
+            </div>
+            <div id="wishlistUserGreetingPill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 40px 0 72px;">
+        <!-- Saved Products Grid -->
+        <div class="product-grid" id="wishlistPageGrid">
+          <!-- Populated dynamically with product cards -->
+        </div>
+
+        <!-- Empty Wishlist State -->
+        <div class="empty-catalog-state" id="wishlistPageEmptyState" style="display: none; padding: 64px 20px; text-align: center; max-width: 540px; margin: 0 auto;">
+          <div style="font-size: 3.5rem; color: var(--soft-lavender); margin-bottom: 16px;">♡</div>
+          <h2 style="font-family: var(--font-serif); font-size: 1.75rem; color: var(--deep-plum); margin-bottom: 8px;">
+            Your wishlist is waiting for some love ♡
+          </h2>
+          <p style="font-size: 0.95rem; color: var(--deep-plum-muted); line-height: 1.6; margin-bottom: 24px;">
+            Save your favourite beauty products here and shop them whenever you're ready.
+          </p>
+          <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="#/all-beauty" class="btn-primary" style="padding: 12px 28px; font-size: 0.95rem;">
+              Explore Beauty
+            </a>
+            <div id="wishlistEmptyAuthPrompt" style="display: inline-block;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ====================================================================
+       MODAL 1: PRODUCT DETAIL MODAL
+       ==================================================================== -->
+  <div class="modal-overlay" id="productDetailModal" role="dialog" aria-modal="true">
+    <div class="product-detail-modal-card">
+      <button class="modal-close-btn" id="closeProductDetailBtn" aria-label="Close modal">✕</button>
+      
+      <!-- Gallery Column -->
+      <div class="modal-gallery-col">
+        <div class="modal-main-image-wrap">
+          <img id="modalMainImg" src="" alt="Product View" class="modal-main-img" />
+        </div>
+        <div class="modal-thumbnails-strip" id="modalThumbnailsStrip">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Info Column -->
+      <div class="modal-info-col">
+        <div class="modal-brand-badge" id="modalBrand">Minimalist</div>
+        <h2 class="modal-product-title" id="modalTitle">10% Niacinamide Face Serum</h2>
+        
+        <div class="modal-rating-row">
+          <div class="rating-badge" id="modalRating">★ 4.8</div>
+          <div class="rating-count" id="modalRatingCount">(18,450 Verified Reviews)</div>
+        </div>
+
+        <div class="modal-price-box">
+          <div class="modal-final-price" id="modalPrice">₹569</div>
+          <div class="modal-original-price" id="modalOriginalPrice">₹599</div>
+          <div class="modal-discount-pill" id="modalDiscount">Save 5%</div>
+        </div>
+
+        <!-- Available Offers -->
+        <div class="modal-offer-callout">
+          <span style="font-size: 1.1rem;">🏷</span>
+          <span>Apply code <strong>LAVENDER15</strong> for Flat 15% OFF on orders over ₹499</span>
+        </div>
+
+        <!-- Size / Variant Selector -->
+        <div class="modal-selector-group" id="modalSizeGroup">
+          <div class="modal-selector-label">Select Size / Variant:</div>
+          <div class="modal-size-chips" id="modalSizeChips">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- Delivery Pincode Checker -->
+        <div class="modal-selector-group">
+          <div class="modal-selector-label">Check Delivery & Cash on Delivery:</div>
+          <div class="pincode-check-wrap">
+            <input type="text" id="pincodeInput" class="pincode-input" placeholder="Enter Pincode" maxlength="6" />
+            <button class="pincode-btn" id="pincodeCheckBtn">Check</button>
+          </div>
+          <div class="pincode-status-text" id="pincodeStatus">✓ Free Express Delivery within 2 days to your area</div>
+        </div>
+
+        <!-- Quantity & Actions -->
+        <div class="modal-actions-row">
+          <div class="quantity-stepper">
+            <button class="qty-step-btn" id="modalQtyMinus">-</button>
+            <span class="qty-display" id="modalQtyDisplay">1</span>
+            <button class="qty-step-btn" id="modalQtyPlus">+</button>
+          </div>
+          <button class="btn-add-to-cart" id="modalAddToCartBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            Add to Bag
+          </button>
+          <button class="btn-buy-now" id="modalBuyNowBtn">Buy Now</button>
+          <button class="action-btn modal-wishlist-action-btn" id="modalWishlistBtn" aria-label="Save to Wishlist" title="Save to Wishlist" style="border: 1px solid var(--border-subtle); padding: 12px 16px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; background: #fff; cursor: pointer; transition: all 0.2s ease;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Product Accordions -->
+        <div class="modal-accordion">
+          <div class="modal-acc-item">
+            <div class="modal-acc-trigger">Description</div>
+            <div class="modal-acc-content" id="modalDescription"></div>
+          </div>
+          <div class="modal-acc-item">
+            <div class="modal-acc-trigger">Key Benefits</div>
+            <div class="modal-acc-content" id="modalBenefits"></div>
+          </div>
+          <div class="modal-acc-item">
+            <div class="modal-acc-trigger">How to Use</div>
+            <div class="modal-acc-content" id="modalHowToUse"></div>
+          </div>
+          <div class="modal-acc-item">
+            <div class="modal-acc-trigger">Active Ingredients</div>
+            <div class="modal-acc-content" id="modalIngredients"></div>
+          </div>
+          <div class="modal-acc-item">
+            <div class="modal-acc-trigger">Suitable For</div>
+            <div class="modal-acc-content" id="modalSuitableFor"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       DRAWER 1: CART SLIDE-OVER DRAWER
+       ==================================================================== -->
+  <div class="drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">Shopping Bag (<span id="cartDrawerCount">0</span>)</h2>
+      <button class="drawer-close-btn" id="closeCartDrawerBtn" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="free-ship-bar-wrap">
+      <div class="free-ship-text" id="freeShipText">Add ₹150 more for FREE Express Shipping!</div>
+      <div class="free-ship-progress">
+        <div class="free-ship-fill" id="freeShipFill" style="width: 70%;"></div>
+      </div>
+    </div>
+
+    <!-- Items List -->
+    <div class="cart-drawer-items" id="cartDrawerItems">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- Cart Footer & Bill Breakdown -->
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="coupon-apply-row">
+        <input type="text" id="cartCouponInput" class="coupon-code-input" placeholder="Enter LAVENDER15" />
+        <button class="coupon-apply-btn" id="applyCartCouponBtn">Apply</button>
+      </div>
+      <div id="couponAppliedMsg" style="font-size: 0.78rem; color: #1B7A43; margin-bottom: 8px; display: none;"></div>
+
+      <div class="cart-bill-breakdown">
+        <div class="bill-row">
+          <span>Bag Total (MRP)</span>
+          <span id="billMrpTotal">₹0</span>
+        </div>
+        <div class="bill-row">
+          <span>Product Discount</span>
+          <span style="color: #1B7A43;" id="billProductDiscount">-₹0</span>
+        </div>
+        <div class="bill-row" id="billCouponRow" style="display: none;">
+          <span>Coupon Discount</span>
+          <span style="color: #1B7A43;" id="billCouponDiscount">-₹0</span>
+        </div>
+        <div class="bill-row">
+          <span>Delivery Charge</span>
+          <span id="billDeliveryFee">FREE</span>
+        </div>
+        <div class="bill-row total-row">
+          <span>Total Amount</span>
+          <span id="billFinalAmount">₹0</span>
+        </div>
+      </div>
+
+      <button class="checkout-proceed-btn" id="proceedToCheckoutBtn">
+        Proceed to Checkout
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       DRAWER 2: WISHLIST SLIDE-OVER DRAWER
+       ==================================================================== -->
+  <div class="drawer-overlay" id="wishlistOverlay"></div>
+  <aside class="cart-drawer" id="wishlistDrawer" role="dialog" aria-modal="true">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">Saved Wishlist (<span id="wishlistDrawerCount">0</span>)</h2>
+      <button class="drawer-close-btn" id="closeWishlistDrawerBtn" aria-label="Close wishlist">✕</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Populated dynamically -->
+    </div>
+    <div class="cart-drawer-footer wishlist-drawer-footer" id="wishlistDrawerFooter">
+      <!-- Populated dynamically with User Info & Logout button -->
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       MODAL 2: CHECKOUT & ORDER CONFIRMATION
+       ==================================================================== -->
+  <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true">
+    <div class="checkout-modal-card">
+      <button class="modal-close-btn" id="closeCheckoutBtn" aria-label="Close checkout">✕</button>
+      
+      <!-- Step 1: Form & Payment -->
+      <div id="checkoutStepForm">
+        <h2 class="checkout-step-title">Express Checkout</h2>
+        <p style="font-size: 0.88rem; color: var(--deep-plum-muted);">Enter shipping details for rapid doorstep delivery.</p>
+
+        <form id="checkoutForm" onsubmit="event.preventDefault(); window.handlePlaceOrder();">
+          <div class="checkout-form-grid">
+            <div>
+              <label class="form-label">Full Name *</label>
+              <input type="text" id="checkoutFullName" class="form-input" required placeholder="Pooja Sharma" value="Pooja Sharma" />
+            </div>
+            <div>
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" id="checkoutPhone" class="form-input" required placeholder="9876543210" value="9876543210" />
+            </div>
+            <div class="full-span">
+              <label class="form-label">Delivery Street Address *</label>
+              <input type="text" id="checkoutAddress" class="form-input" required placeholder="Flat 402, Rosewood Heights, Bandra West" value="Flat 402, Rosewood Heights, Bandra West" />
+            </div>
+            <div>
+              <label class="form-label">City *</label>
+              <input type="text" id="checkoutCity" class="form-input" required placeholder="Mumbai" value="Mumbai" />
+            </div>
+            <div>
+              <label class="form-label">Pincode *</label>
+              <input type="text" id="checkoutPincode" class="form-input" required placeholder="400050" value="400050" />
+            </div>
+          </div>
+
+          <label class="form-label" style="margin-top: 16px;">Select Payment Method:</label>
+          <div class="payment-options-list">
+            <label class="payment-option-card selected">
+              <input type="radio" name="paymentOption" value="upi" checked />
+              <span>⚡ Instant UPI (Google Pay, PhonePe, Paytm, QR)</span>
+            </label>
+            <label class="payment-option-card">
+              <input type="radio" name="paymentOption" value="card" />
+              <span>💳 Credit / Debit Card (Visa, MasterCard, RuPay)</span>
+            </label>
+            <label class="payment-option-card">
+              <input type="radio" name="paymentOption" value="cod" />
+              <span>💵 Cash on Delivery (COD Available)</span>
+            </label>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin: 24px 0 16px; padding-top: 14px; border-top: 1px solid var(--border-subtle);">
+            <span style="font-weight: 700; font-size: 1.1rem;">Total Payable:</span>
+            <span style="font-weight: 800; font-size: 1.3rem; color: var(--deep-plum);" id="checkoutTotalPayable">₹0</span>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; font-size: 1rem;">
+            Place Order Securely
+          </button>
+        </form>
+      </div>
+
+      <!-- Step 2: Order Placed Success -->
+      <div id="checkoutStepSuccess" style="display: none;">
+        <div class="order-success-box">
+          <div class="success-sparkle-icon">✓</div>
+          <h2 style="font-family: var(--font-serif); font-size: 1.8rem;">Order Confirmed!</h2>
+          <p style="color: var(--deep-plum-muted); font-size: 0.92rem; margin-top: 6px;">
+            Thank you for shopping at Lavender Sanctuary. Your package is being packed with care.
+          </p>
+          <div class="order-id-badge" id="successOrderId">ORDER #LAV-984210</div>
+          <p style="font-size: 0.85rem; color: #1B7A43; margin-bottom: 24px;">
+            Estimated doorstep delivery: <strong>Within 48 hours</strong>
+          </p>
+          <button class="btn-primary" id="continueShoppingBtn">Continue Shopping</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 3: ACCOUNT CREATION & SIGN IN (Wishlist Guard)
+       ==================================================================== -->
+  <div class="modal-overlay" id="authModal" role="dialog" aria-modal="true">
+    <div class="auth-modal-card">
+      <button class="modal-close-btn" id="closeAuthModalBtn" aria-label="Close modal">✕</button>
+      
+      <div class="auth-modal-header">
+        <div class="auth-header-sparkle">✦</div>
+        <h2 class="auth-modal-title" id="authModalTitle">Create your Lavender account</h2>
+        <p class="auth-modal-sub" id="authModalSub">
+          Save your favourite beauty products and access them anytime.
+        </p>
+
+        <!-- Product Preview Callout (Shown when user is saving a product) -->
+        <div class="auth-product-preview-card" id="authProductPreview" style="display: none;">
+          <img id="authPreviewImg" src="" alt="Product" class="auth-preview-img" />
+          <div class="auth-preview-details">
+            <div class="auth-preview-tag">✦ SAVING TO YOUR WISHLIST</div>
+            <div class="auth-preview-title" id="authPreviewTitle">Product Title</div>
+            <div class="auth-preview-price" id="authPreviewPrice">₹0</div>
+          </div>
+        </div>
+
+        <!-- Auth Tabs (Create Account / Sign In) -->
+        <div class="auth-tabs-row">
+          <button class="auth-tab-btn active" id="tabCreateAccountBtn">Create Account</button>
+          <button class="auth-tab-btn" id="tabSignInBtn">Login if you have an account</button>
+        </div>
+
+        <!-- Option 1: Continue with Google -->
+        <div style="margin-bottom: 16px;">
+          <button type="button" class="btn-google-auth" onclick="window.handleGoogleAuth();">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink: 0;">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.27 21.43 7.35 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.27 2.57 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+
+        <div class="auth-divider" style="margin: 16px 0;">
+          <span>OR CONTINUE WITH EMAIL</span>
+        </div>
+      </div>
+
+      <!-- Tab 1: Create Account Form -->
+      <form id="createAccountForm" class="auth-form-body" onsubmit="event.preventDefault(); window.handleCreateAccount();">
+        <div class="form-group">
+          <label class="form-label">Full Name *</label>
+          <input type="text" id="regFullName" class="form-input" required placeholder="Enter your full name" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" id="regEmail" class="form-input" required placeholder="name@example.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password *</label>
+          <input type="password" id="regPassword" class="form-input" required placeholder="Create a secure password (min 4 characters)" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number (Optional)</label>
+          <input type="tel" id="regPhone" class="form-input" placeholder="10-digit mobile number" autocomplete="tel" />
+        </div>
+
+        <button type="submit" class="btn-primary auth-submit-btn" id="submitCreateAccountBtn">
+          Create Account & Save to Wishlist ♡
+        </button>
+
+        <div class="auth-divider">
+          <span>OR</span>
+        </div>
+
+        <button type="button" class="quick-guest-auth-btn" id="quickDemoAuthBtn" onclick="window.quickDemoSignIn();">
+          ⚡ 1-Click Instant Guest Sign In
+        </button>
+      </form>
+
+      <!-- Tab 2: Sign In Form -->
+      <form id="signInForm" class="auth-form-body" style="display: none;" onsubmit="event.preventDefault(); window.handleSignIn();">
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" id="loginIdentifier" class="form-input" required placeholder="name@example.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password *</label>
+          <input type="password" id="loginPassword" class="form-input" required placeholder="Enter your password" autocomplete="current-password" />
+        </div>
+
+        <button type="submit" class="btn-primary auth-submit-btn">
+          Sign In & Continue
+        </button>
+
+        <div class="auth-divider">
+          <span>OR</span>
+        </div>
+
+        <button type="button" class="quick-guest-auth-btn" onclick="window.quickDemoSignIn();">
+          ⚡ 1-Click Instant Guest Sign In
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Col -->
+        <div>
+          <a href="#/" class="brand-logo" onclick="if(window.navigateToHome)window.navigateToHome(event); return false;">
+            <div class="brand-icon-wrap" style="width: 40px; height: 40px;">
+              <svg viewBox="0 0 40 40" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                <defs>
+                  <linearGradient id="luxeGoldGradFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFE8B5" />
+                    <stop offset="30%" stop-color="#E5C178" />
+                    <stop offset="70%" stop-color="#C9A96E" />
+                    <stop offset="100%" stop-color="#916E2E" />
+                  </linearGradient>
+                  <linearGradient id="luxePetalGradFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" />
+                    <stop offset="40%" stop-color="#EFE6FA" />
+                    <stop offset="80%" stop-color="#BA9ADF" />
+                    <stop offset="100%" stop-color="#7B569E" />
+                  </linearGradient>
+                </defs>
+                <circle cx="20" cy="20" r="18.5" stroke="url(#luxeGoldGradFoot)" stroke-width="0.9" stroke-dasharray="2 3" opacity="0.6"/>
+                <path d="M20 4.5 L33.5 13.5 L30 28.5 L20 35.5 L10 28.5 L6.5 13.5 Z" fill="url(#luxeGoldGradFoot)" fill-opacity="0.08" stroke="url(#luxeGoldGradFoot)" stroke-width="1.2"/>
+                <path d="M14 10.5 C14 8 16.5 7 18.5 8.5 C20 10 19.5 13 17 15.5 C14.5 18 13 22 13 26 C13 28.8 15.5 29.5 19 29 C23 28.5 25.5 26.5 26.5 24.5" stroke="url(#luxeGoldGradFoot)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 7 C18 10.5 16.2 14 16.2 17.5 C16.2 20 18 21.5 20 21.5 C22 21.5 23.8 20 23.8 17.5 C23.8 14 22 10.5 20 7 Z" fill="url(#luxePetalGradFoot)"/>
+                <path d="M16 13.5 C13 14.5 10.5 16.5 10.5 19 C10.5 21.2 12.5 22.2 15 21.5 C16.2 21 17 19.5 17 17.8 Z" fill="url(#luxePetalGradFoot)" fill-opacity="0.85"/>
+                <path d="M24 13.5 C27 14.5 29.5 16.5 29.5 19 C29.5 21.2 27.5 22.2 25 21.5 C23.8 21 23 19.5 23 17.8 Z" fill="url(#luxePetalGradFoot)" fill-opacity="0.85"/>
+                <path d="M20 3 L20.7 5.3 L23 6 L20.7 6.7 L20 9 L19.3 6.7 L17 6 L19.3 5.3 Z" fill="url(#luxeGoldGradFoot)"/>
+                <circle cx="20" cy="6" r="0.8" fill="#FFFFFF"/>
+                <circle cx="26.5" cy="24.5" r="1.4" fill="url(#luxeGoldGradFoot)"/>
+              </svg>
+            </div>
+            <div class="brand-name-group">
+              <span class="brand-wordmark" style="font-size: 1.4rem;"><span class="logo-gold-initial">L</span>AVENDER</span>
+              <span class="brand-tagline"><span class="tagline-star">✦</span> LUXURY BEAUTY SANCTUARY <span class="tagline-star">✦</span></span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            India's dedicated luxury beauty destination. Celebrating dermatological science, indigenous botanical actives, and longwear makeup artistry tailored for Indian undertones.
+          </p>
+        </div>
+
+        <!-- Col 1: Shop -->
+        <div>
+          <h4 class="footer-col-title">Sanctuary Edits</h4>
+          <ul class="footer-links-list">
+            <li><a href="#/all-beauty" class="footer-link">All Beauty Marketplace</a></li>
+            <li><a href="#/skincare" class="footer-link">Clinical Skincare</a></li>
+            <li><a href="#/haircare" class="footer-link">Restorative Haircare</a></li>
+            <li><a href="#/makeup" class="footer-link">Makeup Studio</a></li>
+            <li><a href="#/bodycare" class="footer-link">Gourmet Bodycare</a></li>
+            <li><a href="#/fragrance" class="footer-link">Artisanal Fragrance</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Brands -->
+        <div>
+          <h4 class="footer-col-title">Flagship Brands</h4>
+          <ul class="footer-links-list">
+            <li><a href="#/brands" class="footer-link">Minimalist</a></li>
+            <li><a href="#/brands" class="footer-link">The Derma Co</a></li>
+            <li><a href="#/brands" class="footer-link">Dot & Key</a></li>
+            <li><a href="#/brands" class="footer-link">Plum Goodness</a></li>
+            <li><a href="#/brands" class="footer-link">Swiss Beauty</a></li>
+            <li><a href="#/brands" class="footer-link">Maybelline NY</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div>
+          <h4 class="footer-col-title">Client Concierge</h4>
+          <ul class="footer-links-list">
+            <li><a href="javascript:void(0)" class="footer-link">Track Your Shipment</a></li>
+            <li><a href="javascript:void(0)" class="footer-link">100% Authenticity Seal</a></li>
+            <li><a href="javascript:void(0)" class="footer-link">7-Day Easy Returns</a></li>
+            <li><a href="javascript:void(0)" class="footer-link">Dermatologist Helpline</a></li>
+            <li><a href="javascript:void(0)" class="footer-link">Lavender Privé Rewards</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom-row">
+        <div>
+          © 2026 LAVENDER BEAUTY SANCTUARY. All Rights Reserved. Crafted with love for Indian Beauty.
+        </div>
+        <div class="footer-badges-row">
+          <div class="footer-badge">
+            <span>🛡</span> 100% Authentic
+          </div>
+          <div class="footer-badge">
+            <span>🔒</span> 256-Bit SSL Encrypted
+          </div>
+          <div class="footer-badge">
+            <span>⚡</span> Express Delivery
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="env.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

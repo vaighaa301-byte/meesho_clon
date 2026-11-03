@@ -1,0 +1,17 @@
+{
+  "name": "lavender-backend",
+  "version": "1.0.0",
+  "description": "Lavender E-Commerce Backend REST API Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "lavender",
+    "ecommerce",
+    "backend",
+    "api"
+  ],
+  "author": "Lavender",
+  "license": "MIT"
+}

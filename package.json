@@ -1,0 +1,16 @@
+{
+  "name": "lavender-sanctuary",
+  "version": "1.0.0",
+  "description": "Lavender - Luxury Beauty E-Commerce Platform (Frontend & Backend)",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "node backend/server.js"
+  },
+  "keywords": [
+    "lavender",
+    "ecommerce",
+    "beauty"
+  ],
+  "author": "Lavender",
+  "license": "MIT"
+}

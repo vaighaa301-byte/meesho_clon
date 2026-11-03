@@ -1,0 +1,184 @@
+{
+  "users": [
+    {
+      "id": "usr_1793181120840_343",
+      "name": "Pooja 7598",
+      "email": "pooja7598@test.com",
+      "phone": "9876543210",
+      "passwordHash": "82682379912bede49a45063ce8c7da57b4ed4cd5398c83aa9b61cb6a3b00b9df4a0c3d608bc84b64ccd06218fdaee8f5947c66f34c3b8547f1a674696e7752ab",
+      "salt": "7ced45d86f103052a1ac74921acf13b6",
+      "createdAt": "2026-10-28T09:52:00.841Z"
+    },
+    {
+      "id": "usr_1793183047922_111",
+      "name": "vaigha",
+      "email": "vaigha@gmail.com",
+      "phone": "8594035040",
+      "passwordHash": "d8e5f0af1e8f094e35a46d99637018972b7d90ff36753ea754b944f41444d2aac7dd75233f8050fa078c6621440eafcd1459be1a1245a8015e35bd1896c6dac6",
+      "salt": "04f8480dce71ad43ca99e2cda5a7ba29",
+      "createdAt": "2026-10-28T10:24:07.922Z"
+    },
+    {
+      "id": "usr_1793185854447_580",
+      "name": "vaigha1",
+      "email": "vaigha1@gmail.com",
+      "phone": "9846948757",
+      "passwordHash": "e099a36d517043aa22f43f975061144cbdda3f1f2c5862fdfb4a94561918804e6c0599527207c35ed7ee800568b72a5e28f84468e2e0235dae1eccd0aebb9b37",
+      "salt": "e960fe81a937eda818c84257201325f6",
+      "createdAt": "2026-10-28T11:10:54.447Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "8fabc7bf1ff8028b96d11c2dc5456258364e45a9ef18e3e8b1d6561b1e4d60ca",
+      "userId": "usr_1793181120840_343",
+      "createdAt": "2026-10-28T09:52:00.841Z"
+    },
+    {
+      "token": "397a8cce3a69af2b33ac5302cb5cb55d7a7d9d5d9d191b945e57636065789345",
+      "userId": "usr_1793185854447_580",
+      "createdAt": "2026-10-28T11:10:54.447Z"
+    }
+  ],
+  "wishlists": {
+    "usr_1793181120840_343": [
+      {
+        "id": "prod-1",
+        "title": "Lavender Serum",
+        "price": 899
+      }
+    ],
+    "usr_1793183047922_111": [
+      {
+        "id": "lav-skin-02",
+        "brand": "The Derma Co",
+        "brandSlug": "the-derma-co",
+        "title": "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++",
+        "category": "skincare",
+        "productType": "Sunscreen",
+        "skinType": "All Skin Types",
+        "concern": "Sun Protection",
+        "price": 449,
+        "originalPrice": 499,
+        "discount": 10,
+        "rating": 4.7,
+        "ratingCount": 14200,
+        "delivery": "Free Express Delivery",
+        "isBestseller": true,
+        "isTrending": true,
+        "isFlashDeal": false,
+        "offerTag": "Bestseller",
+        "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=700&q=80",
+        "thumbnails": [
+          "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=700&q=80",
+          "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80"
+        ],
+        "sizes": [
+          "50 g",
+          "80 g"
+        ],
+        "description": "Ultra-weightless, broad-spectrum sunscreen aqua gel designed by dermatologists. Delivers invisible non-greasy protection with 0% white cast and deep hydration.",
+        "benefits": [
+          "PA++++ maximum UVA and UVB broad spectrum defence",
+          "Zero white cast and no greasy shine",
+          "Guards against digital blue light exposure",
+          "Non-comedogenic and fragrance-free"
+        ],
+        "howToUse": "Take a coin-sized amount or two-finger length and spread evenly over face and neck 15 minutes before stepping outdoors.",
+        "ingredients": "Aqua, Ethylhexyl Methoxycinnamate, Zinc Oxide, 1% Multi-Molecular Hyaluronic Acid, Vitamin E, Glycerin, Titanium Dioxide.",
+        "suitableFor": "Dry, normal, combination, and sensitive skin.",
+        "inStock": true
+      }
+    ],
+    "usr_1793185854447_580": [
+      {
+        "id": "lav-skin-01",
+        "brand": "Minimalist",
+        "brandSlug": "minimalist",
+        "title": "Minimalist 10% Niacinamide Face Serum with Zinc PCA for Blemish & Pore Care",
+        "category": "skincare",
+        "productType": "Serum",
+        "skinType": "Oily & Acne-Prone",
+        "concern": "Acne & Blemishes",
+        "price": 569,
+        "originalPrice": 599,
+        "discount": 5,
+        "rating": 4.8,
+        "ratingCount": 18450,
+        "delivery": "Free Express Delivery",
+        "isBestseller": true,
+        "isTrending": true,
+        "isFlashDeal": false,
+        "offerTag": "Lavender Essential",
+        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80",
+        "thumbnails": [
+          "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80",
+          "https://images.unsplash.com/photo-1608248597359-00f73318d172?auto=format&fit=crop&w=700&q=80",
+          "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=700&q=80"
+        ],
+        "sizes": [
+          "30 ml",
+          "50 ml"
+        ],
+        "description": "An ultra-clean, clinical-grade daily serum that repairs the natural lipid barrier, reduces excess sebum production, and visibly fades persistent post-acne blemishes.",
+        "benefits": [
+          "Fades dark spots and post-inflammatory erythema",
+          "Balances sebum levels within 14 days",
+          "Soothes redness with European Zinc PCA",
+          "Formulated at optimal skin pH 5.5 - 6.0"
+        ],
+        "howToUse": "Apply 2-3 drops to clean, dry skin morning and evening before moisturizer. Pat gently until fully absorbed.",
+        "ingredients": "Aqua, Niacinamide (10%), Butylene Glycol, Zinc PCA (1%), Phenoxyethanol, Ethylhexylglycerin, Hydroxyethylcellulose, Allantoin.",
+        "suitableFor": "All skin types, especially oily, combination, and acne-prone skin.",
+        "inStock": true
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "adm_1793348832824_1024",
+      "title": "Test Rose Glow Serum",
+      "brand": "TestBrand",
+      "brandSlug": "testbrand",
+      "category": "skincare",
+      "productType": "General",
+      "skinType": "All Skin Types",
+      "concern": "General",
+      "price": 499,
+      "originalPrice": 499,
+      "discount": 0,
+      "rating": 4.5,
+      "ratingCount": 100,
+      "delivery": "Free Express Delivery",
+      "isBestseller": false,
+      "isTrending": false,
+      "isFlashDeal": false,
+      "offerTag": "",
+      "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be",
+      "thumbnails": [],
+      "sizes": [],
+      "description": "",
+      "benefits": [],
+      "howToUse": "",
+      "ingredients": "",
+      "suitableFor": "All skin types",
+      "inStock": true,
+      "isAdminProduct": true,
+      "addedAt": "2026-10-30T08:27:12.824Z"
+    }
+  ],
+  "adminSessions": [
+    {
+      "token": "efde25b55999fc04a005adb1649cecd65987a30de3bc889451513e8648787946",
+      "createdAt": "2026-10-30T08:27:12.793Z"
+    },
+    {
+      "token": "eb7e81f55e2a74fbd30b6135f57bbcfb32187fdb7ca686214b8ef17c43c1f286",
+      "createdAt": "2026-10-30T08:28:07.873Z"
+    },
+    {
+      "token": "88dbdba3351298daf109d5ecd7e5e6b0da9c202661a9238a62483103d909845a",
+      "createdAt": "2026-10-31T10:00:06.591Z"
+    }
+  ]
+}
